@@ -1,0 +1,10 @@
+spring:
+  ai:
+    openai:
+      api-key: "sk-xxxxxx"  # DeepSeek API 密钥[5,6](@ref)
+      base-url: "https://api.deepseek.com/v1"  # DeepSeek API 端点
+      chat:
+        options:
+          model: "deepseek-reasoner"  # 模型选择[3,6](@ref)
+          temperature: 0.5            # 控制生成随机性
+          max-tokens: 1000            # 最大输出令牌数[7](@ref)
