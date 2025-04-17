@@ -1,0 +1,14 @@
+<view class="container">
+  <scroll-view class="message-list" scroll-y="true">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message {{item.role}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="input-area">
+    <input value="{{inputMsg}}" bindinput="onInput" placeholder="输入消息..." />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>
